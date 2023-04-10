@@ -2,7 +2,7 @@ set nu
 set clipboard=unnamed
 set softtabstop=4
 set shiftwidth=4
-set guifont=Sarasa\ Mono\ SC:h16
+set guifont=JetbrainsMono\ NF:h16
 imap jk <Esc>
 
 lua require('plugins')
@@ -13,7 +13,22 @@ syntax on
 set background=dark
 colorscheme gruvbox
 
-lua require('lualine').setup()
-lua require('plugin-config/nvim-treesitter')
-lua require('lsp/setup')
-lua require("mason").setup()
+lua <<EOF
+
+require('lualine').setup()
+require('plugin-config/nvim-treesitter')
+require('lsp/setup')
+require("mason").setup()
+require('plugin-config/nvim-tree')
+require('lsp/nvim-cmp')
+
+local function open_nvim_tree()
+
+  -- open the tree
+  require("nvim-tree.api").tree.open()
+end
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
+
+
+EOF

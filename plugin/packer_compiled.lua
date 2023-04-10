@@ -74,10 +74,45 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -99,10 +134,20 @@ _G.packer_plugins = {
     path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -113,12 +158,17 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\opt\\nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "E:\\xdg-config-home\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 
